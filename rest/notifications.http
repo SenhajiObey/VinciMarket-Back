@@ -1,0 +1,24 @@
+POST http://localhost:3000/notifications
+Content-Type: application/json
+
+{
+    "idUser": "61b8fb8d0ad6f7ee709fbfc1",
+    "idProduct": "61af4d49bfezfzeqfsfsdq",
+    "state": false,
+    "title": "Notif Validation SIUUUUUH' ",
+    "description": "Validation Modo"
+    }
+
+###
+
+
+GET http://localhost:3000/notifications/61b8fb8d0ad6f7ee709fbfc1
+Content-Type: application/json
+###
+
+PATCH http://localhost:3000/notifications/61b9b6d3584d08c44b7ced80
+Content-Type: application/json
+
+{
+    "idUser": "61b8fb8d0ad6f7ee709fbfc1"
+}

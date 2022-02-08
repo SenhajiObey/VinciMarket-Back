@@ -1,0 +1,42 @@
+###TEST changeStateMerchandise
+POST http://localhost:3000/user/register
+Content-Type: application/json
+
+{
+ 
+    "name": "jaezfazef",
+    "lastname": "feaz",
+    "campus": 43,
+    "email": "obey-senhaji@email.com",
+    "password": "azer",
+    "is_admin":false,
+    "is_active":true,
+    "url_profil_pic":"default.png"
+
+}
+
+###
+
+###TEST changeStateMerchandise
+POST http://localhost:3000/user/login
+Content-Type: application/json
+
+{ 
+    "email": "obey-senhaji@email.com",
+    "password": "azer"
+}
+
+###
+
+
+###TEST changeStateMerchandise
+GET http://localhost:3000/user
+###
+
+PATCH http://localhost:3000/user/61b4ac9d742695762ba50068/isactive
+Content-Type: application/json
+
+###
+
+PATCH http://localhost:3000/user/61af4d49b82ce6de16f8fa4c/isactive
+Content-Type: application/json
